@@ -28,27 +28,13 @@ import React from "react";
  * The favorited users should be displayed in a list, alphabetically sorted by username.
  */
 const App = () => {
-  const [username, setUsername] = React.useState("");
-
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setUsername(event.target.value);
-  };
-
   return (
     <div className="container mx-auto px-6">
       <div className="h-20 flex items-center justify-center bg-gray-200">
         <h1 className="text-2xl">GitHub Search</h1>
       </div>
 
-      <div className="mt-6">
-        <input
-          className="h-10 border border-gray-800 rounded-md"
-          type="text"
-          onChange={handleChange}
-          name="username"
-          value={username}
-        />
-      </div>
+      <div className="mt-6">Add your search form here</div>
     </div>
   );
 };
